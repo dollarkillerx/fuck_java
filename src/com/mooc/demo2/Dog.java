@@ -16,6 +16,10 @@ public class Dog {
         this.age = age;
     }
 
+    public Dog(String nickname) {
+        this.nickname = nickname;
+    }
+
     void eat() {
         System.out.printf("%s eat\n",this.nickname);
     }

@@ -7,16 +7,17 @@
 
 ### 目录
 
-- HelloWorld   `comm.mooc.demo1`
-- 基础
+- HelloWorld   `com.mooc.demo1`
+- 基础  
   - 变量，函数
   - 流程控制语句
   - 类型(List, Set, Map)
   - 泛型
-  - 面向对象
+  - 面向对象 `com.mooc.demo2`
   - 其他
     - 序列化
 - 基础框架
   - spring
+  
 
 基础参考: https://www.runoob.com/java/java-tutorial.html
