@@ -1,11 +1,12 @@
 package com.mooc.demo3;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class BackManager {
+
     Back back;
     Scanner scanner;
 
@@ -110,10 +111,10 @@ public class BackManager {
 }
 
 class Back {
-    private HashMap<String, BackInfo> back; // 具體存儲數據
+    private ConcurrentHashMap<String, BackInfo> back; // 具體存儲數據
 
     public Back() {
-        back = new HashMap<>();
+        back = new ConcurrentHashMap<>();
     }
 
     // SearchAmount 查詢
@@ -166,9 +167,6 @@ class Back {
 
         fromAccountBackInfo.amount -= amount;
         toAccountBackInfo.amount += amount;
-
-        back.put(fromAccount, fromAccountBackInfo);
-        back.put(toAccount, toAccountBackInfo);
     }
 
     // GetAllBackUser 获取所有银行账户信息
